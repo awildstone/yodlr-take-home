@@ -1,0 +1,63 @@
+/* theme colors */
+$theme-colors: ("primary": #498dcd, "secondary": #f28529, "danger": tomato, "success": #5b4483);
+
+$body-bg: #cccccc;
+
+$rounded-corners: true;
+
+body {
+	font-family: 'Andada Pro', serif !important;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.container {
+		margin: 1 rem;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.container {
+		margin: 5 rem;
+	}
+}
+
+.container {
+	border-radius: 10px;
+}
+
+div.m-lg-5.container {
+	background-color: white;
+	border: 10px solid #f28529;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.m-lg-5.container a {
+	color: #498dcd;
+	text-decoration: none;
+}
+
+.m-lg-5.container a:hover {
+	color: #5b4483;
+}
+
+input.form-control {
+	background-color: #efeeef;
+}
+
+div.mb-4.card {
+	background-color: #efeeef;
+}
+
+h1 {
+	color: #5b4483;
+}
+
+.field-error.form-control {
+	border: 2px solid tomato;
+}
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";
